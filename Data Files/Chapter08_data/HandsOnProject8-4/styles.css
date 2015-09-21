@@ -1,0 +1,156 @@
+/*  JavaScript 6th Edition
+    Chapter 8
+    Hands-on Project 8-4
+
+    Filename: styles.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   width: 600px;
+   background: white;
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+ol, ul {
+   list-style: none;
+}
+
+/* page header */
+header {
+   background: #FFC340;
+   width: 100%;
+   color: black;
+   font-size: 48px;
+   text-align: center;
+   line-height: 1.5em;
+   border-bottom: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+}
+
+/* main content */
+article {
+   text-align: left;
+   background: white;
+   overflow: auto;
+   border-bottom: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+}
+
+article h2 {
+   font-weight: bold;
+   font-size: 24px;
+   padding: 1em;
+   padding-bottom: 0;
+   float: left;
+}
+
+div {
+   padding: 1em;
+   border: none;
+   text-align: left;
+}
+
+div p {
+   font-weight: bold;
+   margin-bottom: 0.4em;
+}
+
+ol {
+   list-style-type: decimal;
+   padding-left: 1em;
+}
+
+li {
+   margin: 0 0 1em 1em;
+}
+
+li span.first {
+   background: green;
+   color: white;
+   padding: 2px 5px;
+   margin-right: 3px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+}
+
+li span.last {
+   background: red;
+   color: white;
+   padding: 2px 5px;
+   margin-right: 3px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+}
+
+/* form */
+form {
+   background: white;
+   padding: 5px;
+   float: left;
+  }
+
+fieldset {
+   padding: 1em;
+   border: none;
+}
+
+input {
+   font-size: 1em;
+   float: left;
+   margin: 0 auto;
+}
+
+#newItem {
+   width: 15em;
+}
+
+label {
+   display: block;
+   font-weight: bold;
+   text-align: left;
+}
+
+input, label, button {
+   margin: 5px 10px;
+}

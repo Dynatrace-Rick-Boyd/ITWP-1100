@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 11
+      Hands-on Project 11-2
+
+      Author: 
+      Date:   
+
+      Filename: index.htm
+   -->
+   <meta charset="utf-8" />
+   <meta id="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hands-on Project 11-2</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="modernizr.custom.65897.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 11-2
+      </h1>
+   </header>
+
+   <article>
+      <div id="errorMessage"></div>
+      <h2>Stock Quotes</h2>
+      <form>
+         <fieldset>
+            <input type="text" />
+            <input type="submit" value="Get Quote" />
+         </fieldset>
+      </form>
+      <table id="tickerTable" border="0">
+         <tr>
+            <td>Ticker Symbol</td>
+            <td id="ticker">&nbsp;</td>
+         </tr>
+         <tr>
+            <td>Opening Price</td>
+            <td id="openingPrice">&nbsp;</td>
+         </tr>
+         <tr>
+            <td>Last Trade Price</td>
+            <td id="lastTrade"></td>
+         </tr>
+         <tr>
+            <td>Last Trade Date/Time</td>
+            <td id="lastTradeDT">&nbsp;</td>
+         </tr>
+         <tr>
+            <td>Change</td>
+            <td id="change">&nbsp;</td>
+         </tr>
+         <tr>
+            <td>Day's Range</td>
+            <td id="range">&nbsp;</td>
+         </tr>
+         <tr>
+            <td>Average Volume</td>
+            <td id="volume">&nbsp;</td>
+         </tr>
+      </table>
+      <figure>
+         <img id="chart" src="" alt="Stock line chart from Yahoo.com." />
+      </figure>
+   </article>
+   <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+/*  JavaScript 6th Edition
+    Chapter 11
+    Chapter case
+
+    Whole Spectrum Energy Solutions
+    Large format style sheet
+
+    Filename: styles.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   width: 640px;
+   margin: 0 auto;
+   font-family: arial, helvetica, sans-serif;
+   -moz-box-shadow: 0 0 20px #000000;
+   -webkit-box-shadow: 0 0 20px #000000;
+   box-shadow: 0 0 20px #000000;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+a:link, a:visited {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:hover {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:active {
+   text-decoration: none;
+   color: inherit;
+}
+
+/* page header */
+header h1 img {
+   display: block;
+   float: left;
+}
+
+div.installed {
+   width: 320px;
+   height: 74px;
+   padding: 30px 20px 20px;
+   text-align: center;
+   float: left;
+   background: rgb(36,54,102);
+   color: white;
+   font-size: 20px;
+}
+
+div.installed span {
+   font-family: "fredoka one", Verdana, Geneva, Arial, Helvetica, sans-serif;
+   color: #ffab00;
+}
+
+/* navigation */
+nav {
+   float: left;
+   width: 320px;
+   height: 68px;
+   padding: 10px;
+   font-size: 14px;
+   background: rgb(36,54,102);
+}
+
+nav ul {
+   text-align: center;
+}
+
+nav ul li {
+   padding: 2px 10px;
+   display: inline-block;
+   margin: 0 5px;
+   background: rgb(216,217,219);
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   border: 2px solid rgb(216,217,219);
+}
+
+nav ul li:hover, nav ul li.currentPage {
+   background: rgb(69,105,13);
+   color: rgb(216,217,219);
+   border: 2px solid rgb(69,105,13);
+}
+
+nav ul li:hover {
+   border: 2px solid #ffab00;
+}
+
+/* main content */
+article {
+   padding: 20px 20px 40px;
+   background: #FFFDD1;
+   overflow: auto;
+   clear: both;
+}
+
+article h2 {
+   font-size: 32px;
+   text-align: left;
+   margin-bottom: 20px;
+}
+
+article section.locales ul {
+   float: left;
+   width: 20%;
+   margin-right: 2em;
+}
+
+article section.locales ul li {
+   background: rgb(36,54,102);
+   color: white;
+   padding: 0.4em;
+   border-radius: 0.4em;
+   margin: 0 0 0.4em;
+   cursor: default;
+}
+
+article section.locales ul li:active {
+   background: rgb(69,105,13);
+}
+
+article section.week {
+   text-align: center;
+}
+
+article section.week div.container {
+   display: inline-block;
+}
+
+article section.week div.container p.error {
+   display: none;
+}
+
+article section.week table {
+   display: none;
+   background: rgb(57,104,165);
+   color: white;
+   text-align: left;
+   float: left;
+}
+
+article section.week table caption {
+   font-size: 24px;
+   font-weight: bold;
+   text-align: center;
+   padding: 1em;
+   display: none;
+   background: rgb(216,217,219);
+   color: black;
+}
+
+article section.week table thead {
+   display: none;
+}
+
+article section.week table td {
+   padding: 0.4em 1em;
+   font-size: 1.6em;
+}
+
+article section.week p {
+   text-align: right;
+   clear: left;
+}
+
+article section.week p a {
+   color: rgb(69,105,13);
+}
+
+/* footer */
+footer {
+   background: rgb(36,54,102);
+   color: white;
+   text-align: center;
+   padding: 10px;
+   font-size: 16px;
+}
+
+footer p span {
+   color: #ffab00;
+}

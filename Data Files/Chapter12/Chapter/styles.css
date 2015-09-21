@@ -1,0 +1,276 @@
+/*  JavaScript 6th Edition
+    Chapter 12
+    Chapter case
+
+    Life on Rocks Wildlife Cruises
+    Large format style sheet
+
+    Filename: styles.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   width: 960px;
+   margin: 0 auto;
+   font-family: arial, helvetica, sans-serif;
+   -moz-box-shadow: 0 0 20px #000000;
+   -webkit-box-shadow: 0 0 20px #000000;
+   box-shadow: 0 0 20px #000000;
+   background: -webkit-linear-gradient(rgb(133,162,196), rgb(33,46,65)) no-repeat;
+   background: -moz-linear-gradient(rgb(133,162,196), rgb(33,46,65)) no-repeat;
+   background: linear-gradient(rgb(133,162,196), rgb(33,46,65)) no-repeat;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+a:link, a:visited {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:hover {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:active {
+   text-decoration: none;
+   color: inherit;
+}
+
+/* photos */
+#pic1 {
+   float: left;
+}
+
+#pic2 {
+   float: right;
+}
+
+#pic1 img, #pic2 img {
+   display: block;
+}
+
+/* page header */
+header {
+   float: left;
+}
+
+header h1 {
+   float: left;
+   font-family: "maven pro", Verdana, Geneva, Arial, Helvetica, sans-serif;
+   border-top: 1px solid rgb(77, 118, 163);
+   color: white;
+   background: rgb(77, 118, 163);
+   font-size: 3em;
+   text-align: center;
+   width: 320px;
+   height: 89px;
+}
+
+header h1 span {
+   color: rgb(77, 118, 163);
+   background: white;
+   font-size: 0.8333em;
+   display: block;
+}
+
+/* navigation */
+nav {
+   float: left;
+   font-size: 14px;
+   width: 320px;
+   height: 45px;
+   text-align: center;
+}
+
+nav ul {
+   width: 100%;
+}
+
+nav ul li {
+   width: 106.6666px;
+   display: block;
+   float: left;
+   background: rgb(33,46,65);
+   color: white;
+}
+
+nav ul li p {
+   line-height: 45px;
+   font-size: 1.4em;
+}
+
+nav ul li:hover {
+   background: rgb(77, 118, 163);
+}
+
+nav ul ul {
+   position: relative;
+   z-index: 10;
+   display: none;
+   background: rgb(33,46,65);
+}
+
+nav ul ul.show {
+   display: block;
+}
+
+nav ul ul li {
+   clear: left;
+   text-align: left;
+   line-height: normal;
+   height: auto;
+   padding: 0.4em;
+   border: 2px solid rgb(33,46,65);
+}
+
+nav ul ul li:hover {
+   color: rgb(77,118,163);
+   background: white;
+}
+
+/* container */
+div.container {
+   background: rgb(33,46,65);
+}
+
+/* clearfix */
+div.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* sidebars */
+aside {
+   width: 25%;
+   overflow: auto;
+   padding: 20px 20px 40px;
+   font-family: "maven pro", Verdana, Geneva, Arial, Helvetica, sans-serif;
+   background: rgb(33,46,65);
+}
+
+aside.calendar {
+   float: left;
+   clear: left;
+   color: white;
+}
+
+aside.calendar h3{
+   font-size: 1.2em;
+   font-weight: bold;
+   padding-bottom: 0.2em;
+   color: rgb(171,206,244);
+}
+
+aside.calendar ul {
+   text-indent: 1.2em;
+   margin-bottom: 1em;
+}
+
+aside.calendar li {
+   padding: 0.2em;
+}
+
+aside.testimonials {
+   float: right;
+}
+
+aside.testimonials p {
+   background: white;
+   border-radius: 10px;
+   padding: 0.4em;
+   margin-bottom: 1em;
+}
+
+/* main content */
+article {
+   float: left;
+   background: white;
+   width: 50%;
+   font-family: "maven pro", Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+article div {
+   position: relative;
+}
+
+article h2 {
+   font-family: arial, helvetica, sans-serif;
+   font-size: 32px;
+   text-align: center;
+   padding: 0.4em;
+   background: rgb(119,176,116);
+   color: white;
+}
+
+article ul {
+   position: absolute;
+   top: 0.4em;
+   left: 0.4em;
+   color: white;
+   font-size: 2.2em;
+   font-family: arial, helvetica, sans-serif;
+}
+
+article img {
+   display: block;
+}
+
+/* footer */
+footer {
+   background: rgb(77, 118, 163);
+   font-family: "maven pro", Verdana, Geneva, Arial, Helvetica, sans-serif;
+   color: white;
+   text-align: center;
+   padding: 10px;
+   font-size: 16px;
+   clear: both;
+}
+
+footer p span {
+   color: #ffab00;
+}
