@@ -46,15 +46,27 @@
         
       <aside>
          <ul>
-            <li>Blanket Flower</li>
-            <li>Hedge Rose</li>
-            <li>Little Bluestem</li>
+            <li onclick="document.getElementById('plantImg').src = blanket">Blanket Flower</li>
+            <li onclick="document.getElementById('plantImg').src = bluestem">Hedge Rose</li>
+            <li onclick="document.getElementById('plantImg').src = rugosa">Little Bluestem</li>
          </ul>
       </aside>
     
       <article>
          <figure>
+			<img src="#" width="640" height="400" alt="" title="" id="plantImg"/>
              <figcaption>
+				<script>
+					/*
+					Information on available plants 
+					including link to USDA
+					*/
+					document.write("<p>Plant Choices for <a href='http://planthardiness.ars.usda.gov'>hardiness zones</a> 5a-6b</p>"); //hardiness zones for Chicago
+					//define variables containing img src values
+					var blanket = "images/blanket.jpg"
+					var bluestem = "images/bluestem.jpg"
+					var rugosa = "images/rugosa.jpg"
+				</script>
 
             </figcaption>
          </figure>

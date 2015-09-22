@@ -6,8 +6,8 @@
       Chapter 1
       Hands-on Project 1-2
 
-      Author: 
-      Date:   
+      Author: Richard Boyd
+      Date:   9/21/2015
 
       Filename: index.htm
    -->
@@ -15,6 +15,7 @@
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Hands-on Project 1-2</title>
    <link rel="stylesheet" href="styles.css" />
+   <script src="modernizr.custom.05819.js"></script>
 </head>
 
 <body>
@@ -26,7 +27,18 @@
 
    <article>
       <h2>High-Speed Internet Plans</h2>
-
+		<script>
+			//initialize variables for service names and speeds
+			var service1Name = "Basic";
+			var service2Name = "Express";
+			var service3Name = "Extreme";
+			var service4Name = "Ultimate";
+			var service1Speed = "5";
+			var service2Speed = "25";
+			var service3Speed = "50";
+			var service4Speed = "150";
+			
+		</script>
       <table>
          <thead>
             <tr>
@@ -37,34 +49,50 @@
          <tbody>
             <tr>
                <td>
-
-               </td>
+					<script>
+						document.write(service1Name);
+					</script>
+			   </td>
                <td>
-
-               </td>
-            </tr>
-            <tr>
-               <td>
-
-               </td>
-               <td>
-
+					<script>
+						document.write(service1Speed);
+					</script>
                </td>
             </tr>
             <tr>
                <td>
-
+					<script>
+						document.write(service2Name);
+					</script>
                </td>
                <td>
-
+					<script>
+						document.write(service2Speed);
+					</script>
                </td>
             </tr>
             <tr>
                <td>
-
+					<script>
+						document.write(service3Name);
+					</script>
                </td>
                <td>
-
+					<script>
+						document.write(service3Speed);
+					</script>
+               </td>
+            </tr>
+            <tr>
+               <td>
+					<script>
+						document.write(service4Name);
+					</script>
+               </td>
+               <td>
+					<script>
+						document.write(service4Speed);
+					</script>
                </td>
             </tr>
          </tbody>
