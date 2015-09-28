@@ -1,9 +1,0 @@
-Did you know you can create and play rich, functional games using JavaScript?  I did not.  I stumbled across this project in my newsfeed last week and have been thinking a lot about technological possibilities; a functional version of Starcraft, a real-time strategy game created in 1998 by Blizzard Entertainment.  It used to be to play games in a browser you would need Flash or a Java applet, but I learned last week that with the advent of HTML 5, we are enabled with client-side code to do seemingly just as much.
-
-The maps and characters are managed by game components all broken down into JavaScript libraries.  The code repository is hosted on GitHub so people with knowledge, time, and passion can commit and bring the game to reality.  What's more: my research suggests that with NodeJS (JavaScript which executes on the server for functionality, much like PHP or Python or Ruby on Rails) and WebSockets (persistent connections between browsers and servers, good for real-time interaction), multi-player functionality is feasible.  Even more: the article I found about that pre-dates the publishing of HTTP/2, where server-push is a part of the protocol and could be made even more straightforward.
-
-Check it out!
-Starcraft article: http://sdtimes.com/sd-times-github-project-of-the-week-starcraft/
-Creating a multiplayer experience with NodeJS: http://rawkes.com/articles/creating-a-real-time-multiplayer-game-with-websockets-and-node.html
-More about NodeJS (video): https://www.youtube.com/watch?v=pU9Q6oiQNd0 
-The GitHub repo for StarCraft: https://github.com/gloomyson/StarCraft

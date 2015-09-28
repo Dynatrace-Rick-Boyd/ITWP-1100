@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 2
+      Hands-on Project 2-2
+
+      Author: Richard Boyd
+      Date:   9/28/2015
+
+      Filename: index.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 2-2</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 2-2
+      </h1>
+   </header>
+
+   <article>
+      <h2>Contact Information</h2>
+      <form>
+        <fieldset id="contactinfo">
+          <label for="nameinput">
+            Name
+            <input type="text" id="nameinput" name="name" />
+          </label>
+          <label for="emailinput">
+            Email
+            <input type="text" id="emailinput" name="email" />
+          </label>
+          <label for="phoneinput">
+            Phone
+            <input type="text" id="phoneinput" name="phone" />
+          </label>
+        </fieldset>
+        <fieldset id="submitbutton">
+          <input type="button" id="submit" value="Submit" />
+        </fieldset>
+     </form>
+   </article>
+   <script>
+		function submitInfo() {
+			var name = document.getElementById("nameinput");
+			var email = document.getElementById("emailinput");
+			var phone = document.getElementById("phoneinput");
+			(name.value && email.value && phone.value) ? alert("Thank you!") : alert("Please fill in all fields")
+		}
+		//add listener for submit button
+		document.getElementById("submit").addEventListener("click", submitInfo, false);
+   </script>
+   <hr>
+   <a href="http://validator.w3.org/check?uri=referer" title="HTML5 Validation">HTML5 Validation</a>&nbsp;|&nbsp;<a href="../../home.htm" title="Back to Home">Back to Course Homepage</a>
+</body>
+</html>
