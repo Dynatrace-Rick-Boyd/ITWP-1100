@@ -1,0 +1,63 @@
+<style type="text/css">
+
+a:link 	  {  	color: blue }
+a:visited 	  {  	color: maroon }
+a:active 	  {  	color: maroon }
+
+body 	  {  	color: black;
+background-color: yellow;
+width: 100%;
+ }
+ 
+#nav {
+text-align : center;
+padding: 5px;
+}
+ 
+.nav-button:link {
+text-align: center;
+color: gray;
+font-size: 20px;
+font: Helvetica;
+padding-left: 5px;
+padding-right: 5px;
+} 
+
+.nav-button:active{
+color:white;
+}
+
+.nav-button:visited {
+color: gray;
+}
+
+.nav-button:hover {
+color: white;
+background-color: gray;
+} 
+
+#article-left {
+position: absolute;
+left: 2%;
+width: 45%;
+height: 80%;
+
+}
+
+#article-right {
+position: absolute;
+right: 2%;
+width: 45%;
+height: 80%;
+
+}
+
+#footer {
+position: absolute;
+bottom: 20px;
+width: 100%;
+text-align: center;
+height: 20px;
+}
+
+</style>
