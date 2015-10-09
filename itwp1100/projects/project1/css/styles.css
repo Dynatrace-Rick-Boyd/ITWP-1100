@@ -40,11 +40,11 @@ background-color: gray;
 position: absolute;
 left: 10%;
 width: 40%;
-height: 80%;
+
 
 }
 
-img {
+imgr {
 position:absolute;
 top:0;
 bottom:0;
@@ -56,13 +56,22 @@ article {
 font-size: 30px;
 color: gray;
 text-align: center;
+height: 700px;
+
+}
+
+
+table {
+padding: 10px;
+height: 500px;
+vertical-align: middle;
 }
 
 #article-right {
 position: absolute;
 right: 10%;
 width: 40%;
-height: 80%;
+
 
 }
 

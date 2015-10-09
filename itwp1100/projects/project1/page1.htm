@@ -8,14 +8,53 @@
    <script src="js/modernizr.custom.05819.js"></script>
 </head>
 <body>
-<div id="nav">
-	<a class = "nav-button" href="index.htm" title="Home">Home</a> |
-	<a class = "nav-button" href="page1.htm" title="Beekeeping">Beekeeping</a> |
-	<a class = "nav-button" href="page2.htm" title="Bees Are Dying">Bees Are Dying</a> |
-	<a class = "nav-button" href="page3.htm" title="Bee Stings">Bee Stings</a>
-<!-- validation and course homepage link -->
-<div id="footer">
-<hr>
-<a href="http://validator.w3.org/check?uri=referer" title="HTML5 Validation">HTML5 Validation</a>&nbsp;|&nbsp;<a href="../../home.htm" title="Back to Home">Back to Course Homepage</a>
-</div></body>
+<div id="main">
+	<div id="nav">
+		<a class = "nav-button" href="index.htm" title="Home">Home</a> |
+		<a class = "nav-button" href="page1.htm" title="Beekeeping">Beekeeping</a> |
+		<a class = "nav-button" href="page2.htm" title="Bees Are Dying">Bees Are Dying</a> |
+		<a class = "nav-button" href="page3.htm" title="Bee Stings">Bee Stings</a>
+	</div>
+	<div id="content">
+		<article id="article-left">
+			<h2>Beekeeping</h2>
+			<p>People, called beekeepers, maintain colonies of honey bees for the 
+			purpose of harvesting honey, beeswax, and other byproducts of 
+			the colony.  Beekeeping goes back to ancient Egypt, and is practiced on 
+			all 6 populous continents. </p>
+			<p> Beekeeping farms, called "apiaries," 
+			range from very small, independent operations to very large industrial ones. </p>
+		</article>
+		<article id="article-right">
+			<table>
+			<tr><td style="border:1px solid black;">
+			<h6>Find out how many bees you'd need to keep to produce honey!</h6>
+
+			Desired annual honey output:<br><input id="jars" name="numJarsOfHoney" type="text">
+			<br><input type="button" value="Submit" id="submitButton">
+			<br><p id="output" style="color:green;"><br><br><br><br></p></td></tr></table>
+			
+		</article>
+	</div>
+	<!-- validation and course homepage link -->
+	<div id="footer">
+	<hr>
+	<a href="http://validator.w3.org/check?uri=referer" title="HTML5 Validation">HTML5 Validation</a>&nbsp;|&nbsp;<a href="../../home.htm" title="Back to Home">Back to Course Homepage</a>
+	</div>
+</div>
+<script>
+	function calcNumberOfBees() {
+		var numJars = document.getElementById("jars").value;
+		//22 oz per jar and 6 teaspoons per ounce and 36 bees per teaspoon
+		var numBees = numJars*22*6*36;
+		document.getElementById("output").innerHTML = "You would need " +numBees+ " bees to make "+ numJars +" jars of honey. By comparison, the largest apiary in the US keeps 2 to 5 billion bees each year ";
+	}
+	
+	var sButton = document.getElementById("submitButton");
+	if (sButton.addEventListener) {
+		sButton.addEventListener("click", calcNumberOfBees, false);
+	} else if (sButton.attachEvent)
+		sButton.attachEvent("onclick", calcNumberOfBees);
+</script>
+</body>
 </html>

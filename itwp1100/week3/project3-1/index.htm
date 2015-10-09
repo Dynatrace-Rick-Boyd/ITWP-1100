@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 3
+      Hands-on Project 3-1
+
+      Author: Richard Boyd
+      Date:   10/8/2015
+
+      Filename: index.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 3-1</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 3-1
+      </h1>
+   </header>
+
+   <article>
+      <h2>Lunch selections</h2>
+      <form>
+         <input type="checkbox" id="item1" value="8" />
+         <label for="item1">Fried chicken ($8.00)</label>
+         <input type="checkbox" id="item2" value="10" />
+         <label for="item2">Fried halibut ($10.00)</label>
+         <input type="checkbox" id="item3" value="8" />
+         <label for="item3">Hamburger ($8.00)</label>
+         <input type="checkbox" id="item4" value="13" />
+         <label for="item4">Grilled salmon ($13.00)</label>
+         <input type="checkbox" id="item5" value="6" />
+         <label for="item5">Side salad ($6.00)</label>
+         <input type="button" value="Submit" id="sButton" />
+      </form>
+      <div>
+         <p id="total"></p>
+      </div>
+   </article>
+   <script>
+		//define addition function
+		function calcTotal() {
+			var itemTotal = 0;
+			var items = document.getElementsByTagName("input");
+			
+			//loop through item values and accumulate sum
+			for (var i = 0; i < 5; i++) {
+				if (items[i].checked) {
+					//multiply by 1 so treated as number
+					itemTotal += (items[i].value * 1);
+				}
+			}
+			document.getElementById("total").innerHTML = "Your order total is $" + itemTotal + ".00";
+		}
+		//add event listener for Submit
+		var submitButton = document.getElementById("sButton");
+		if (submitButton.addEventListener) {
+			submitButton.addEventListener("click", calcTotal, false)
+		} //and for cross browser compatibility...
+		else if (submitButton.attachEvent) {
+			submitButton.attachEvent("onClick", calcTotal);
+		}
+   </script>
+   <hr>
+   <a href="http://validator.w3.org/check?uri=referer" title="HTML5 Validation">HTML5 Validation</a>&nbsp;|&nbsp;<a href="../../home.htm" title="Back to Home">Back to Course Homepage</a>
+</body>
+</html>
